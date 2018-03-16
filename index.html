@@ -5,9 +5,83 @@
 	<title>Réservation une chambre d'hôtel</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 </head>
+
 <body>
-	<h1>Résevation d'une chambre d'hôtel</h1>
-	<div class="container"></div>
+    <div id="block">
+    	<h1>Résevation d'une chambre d'hôtel</h1>
+    	<table class="table">
+    	    <thead>
+    	        <tr>
+    	            <th class="un">Nom de l'hôtel</th>
+    	            <th class="deux">Action</th>
+    	        </tr>
+    	    </thead>
+    	    <tbody>
+    	        <tr>
+    	            <td id="hot1">Hotel de la gare</td>
+    	            <td><button id="reserve1" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">réserver</td>
+    	        </tr>
+    	        <tr>
+    	            <td id="hot2">Hotel du port</td>
+    	           <td><button id="reserve2" ype="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">réserver</td>
+    	            
+    	        </tr>
+    	        <tr>
+    	            <td id="hot3">Hotel de l'angle de la rue</td>
+    	           <td><button id="reserve3" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">réserver</td>
+    	            
+    	        </tr>
+    	    </tbody>
+    	</table>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        
+      <div class="modal-body">
+      	<div class="row">
+      		<div class="col-sm-4">
+      			<strong>Num chambre</strong>
+      		</div>
+      		<div class="col-sm-4">
+      			<strong>Nombre de personne</strong>
+      		</div>
+      		<div class="col-sm-4">
+      			<strong type="date">Date</strong>
+      		</div>
+      	</div>
+      	<hr>
+      	<div class="row">
+      		<div class="col-sm-4">
+      			<input type="number">
+      		</div><div class="col-sm-4">
+      			<input type="number">
+      		</div><div class="col-sm-4">
+      			<input type="date">
+      		</div>
+      	</div>
+      	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
