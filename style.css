@@ -1,6 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 
-h1{
+
+body{
+	background-image: url('image/chambre_4.jpg');
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
+}
+
+p{
+	font-family: 'Great Vibes', cursive;
+	font-size: 80px;
+	text-align: center;
+	color:#F6CEEC;
+
 }
 
 #block{
@@ -8,4 +24,20 @@ h1{
 	width: 50%;
 	margin-left: 25%;
 	margin-right: 25%;
+}
+
+th{
+	font-weight: bold;
+	color:#F6CEEC;
+	font-family: 'Great Vibes', cursive;
+	font-size: 40px;
+}
+
+td{
+	font-size: 20px;
+	color:#F6CEEC;	
+}
+
+.modal-body{
+	background: #fea;
 }
